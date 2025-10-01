@@ -111,9 +111,9 @@ function Cake() {
       {!micPermissionGranted && !candlesBlownOut && (
         <button
           onClick={startMic}
-          className="absolute top-10 px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg z-50"
+          className="absolute top-10 px-6 py-3 bg-pink-600 text-white rounded-lg shadow-lg z-50"
         >
-          🎤 Enable Mic
+           Enable Mic
         </button>
       )}
 

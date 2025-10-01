@@ -40,7 +40,7 @@ function Card() {
             <p>Hi motherearth!! Today we celebrate not just your birthday, but the incredible mother you are. Thank you for loving us despite
               having differences and through every hardship. You’ve always been our strength, our comfort, and the reason we keep going. No matter 
               what life brings, your love never fails—and that’s the greatest gift we could ever have. .</p>
-            <p>I love you more than words can ever say. More than I say, 
+            <p>We love you more than words can ever say. More than I say, 
               kasi syempre im not vocal u know naman na kahit d ko sabihin, I still love you hahahahaah. Loveyou, Ma! Happy birthday uliitttt!!            </p>
             
             <p className="signed">Erickaaa</p>
@@ -61,7 +61,7 @@ function Card() {
         animate={{ opacity: 1, visibility: "visible" }}
         transition={{duration: 1.2}}> 
         <Link to ='/cake'>
-        <p className="-mt-[4rem] px-7 py-3 bg-customBlue text-white font-medium text-base rounded-full hover:bg-blue-600">
+        <p className="-mt-[4rem] px-7 py-3 bg-pink-300 text-white font-medium text-base rounded-full hover:bg-pink-600">
             Next Page
           </p>
         </Link>
