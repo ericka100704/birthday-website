@@ -1,6 +1,4 @@
-/* shoutout to Lena Stanley for the present styling https://codepen.io/lenasta92579651/pen/oNWgeoq 
-   and Cyril for the ticket https://codepen.io/ArnHack/pen/ygQOYd
-*/
+/* 🎁 Birthday Gift - Pink Glossy Theme */
 
 .birthday-gift {
   position: relative;
@@ -9,16 +7,6 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-}
-
-.birthday-gift:before {
-  content: "";
-  position: absolute;
-  width: 170px;
-  height: 20px;
-  border-radius: 50%;
-  top: 90px;
-  left: -10px;
 }
 
 input#click {
@@ -30,8 +18,10 @@ input#click {
   position: relative;
   width: 300px;
   height: 200px;
-  background-color: #ffc0cb; /* light pink */
+  background: linear-gradient(145deg, #f8bbd0, #f48fb1, #ec407a); /* glossy pink gradient */
+  border-radius: 8px;
   cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
 /* ribbon box */
@@ -40,7 +30,7 @@ input#click {
   position: absolute;
   width: 40px;
   height: 200px;
-  background-color: #ff69b4; /* medium pink */
+  background: linear-gradient(to bottom, #ec407a, #d81b60); /* shiny ribbon */
   left: 124px;
 }
 
@@ -56,13 +46,15 @@ input#click {
 /* box cover */
 .gift-top {
   position: absolute;
-  background-color: #ffc0cb; /* light pink */
+  background: linear-gradient(145deg, #f8bbd0, #f48fb1, #ec407a); 
   width: 340px;
   height: 75px;
   top: -75px;
   left: -20px;
+  border-radius: 6px;
   transform-origin: bottom left;
   transition: .3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 /* ribbon cover */
@@ -71,7 +63,7 @@ input#click {
   position: absolute;
   width: 40px;
   height: 75px;
-  background-color: #ff69b4; /* medium pink */
+  background: linear-gradient(to bottom, #ec407a, #d81b60);
   left: 138px;
 }
 
@@ -80,8 +72,8 @@ input#click {
   position: absolute;
   width: 10px;
   height: 0;
-  border-bottom: 60px solid #ff69b4; /* medium pink */
-  border-top: 60px solid #ff69b4;
+  border-bottom: 60px solid #ec407a;
+  border-top: 60px solid #d81b60;
   border-left: 0px solid transparent;
   border-right: 60px solid transparent;
   transform: rotate(-90deg);
@@ -93,6 +85,7 @@ input#click {
   transform: rotate(-110deg) scaleX(0.85);
 }
 
+/* raffle ticket animation */
 #raffle-red,
 .entry div {
   position: absolute;
@@ -101,25 +94,11 @@ input#click {
   z-index: -1;
 }
 
-.raffle-1 {
-  transform: translateY(-20px);
-}
-
-#click:checked + .gift .raffle-1 {
-  transform: translateY(-110px) translateX(-160px);
-}
-
-#click:checked + .gift .raffle-2 {
-  transform: translateY(-200px) translateX(-10px);
-}
-
-#click:checked + .gift .raffle-3 {
-  transform: translateY(-300px) translateX(-150px);
-}
-
-#click:checked + .gift .entry div {
-  transform: translateY(-70px);
-}
+.raffle-1 { transform: translateY(-20px); }
+#click:checked + .gift .raffle-1 { transform: translateY(-110px) translateX(-160px); }
+#click:checked + .gift .raffle-2 { transform: translateY(-200px) translateX(-10px); }
+#click:checked + .gift .raffle-3 { transform: translateY(-300px) translateX(-150px); }
+#click:checked + .gift .entry div { transform: translateY(-70px); }
 
 .entry {
   text-align: center;
@@ -129,10 +108,11 @@ input#click {
 
 /* ticket base */
 #raffle-red div {
-  background-image: radial-gradient(circle at top left, transparent 17px, #ff69b4 17px),
-    radial-gradient(circle at top right, transparent 17px, #ff69b4 17px),
-    radial-gradient(circle at bottom left, transparent 17px, #ff69b4 17px),
-    radial-gradient(circle at bottom right, transparent 17px, #ff69b4 17px);
+  background-image: radial-gradient(circle at top left, transparent 17px, #f06292 17px),
+    radial-gradient(circle at top right, transparent 17px, #f06292 17px),
+    radial-gradient(circle at bottom left, transparent 17px, #f06292 17px),
+    radial-gradient(circle at bottom right, transparent 17px, #f06292 17px);
+  background-color: #f8bbd0;
   box-shadow: 0 38px 14px -35px rgba(0, 0, 0, 0.3);
   background-size: 50% 50%;
   background-position: top left, top right, bottom left, bottom right;
@@ -146,6 +126,8 @@ input#click {
   top: 50%;
   transform: translate(-50%, -50%);
   transition: 0.5s;
+  border-radius: 10px;
+  border: 2px solid #f48fb1;
 }
 
 /* ticket text */
@@ -156,7 +138,7 @@ input#click {
   font-weight: bold;
   padding-top: 9px;
   text-transform: uppercase;
-  color: white; /* text white so it pops */
+  color: #e0b9ce; /* deep magenta text */
   text-align: center;
   letter-spacing: 1px;
   white-space: pre-line;
@@ -172,10 +154,10 @@ input#click {
   background-size: 7px 7px;
   background-repeat: repeat-y;
   background-position: 0 0, 0 0, 100% 0, 100% 0;
-  background-image: linear-gradient(45deg, transparent 75%, #ff69b4 75%),
-    linear-gradient(135deg, transparent 75%, #ff69b4 75%), 
-    linear-gradient(-45deg, transparent 75%, #ff69b4 75%),
-    linear-gradient(-135deg, transparent 75%, #ff69b4 75%);
+  background-image: linear-gradient(45deg, transparent 75%, #f06292 75%),
+    linear-gradient(135deg, transparent 75%, #f06292 75%), 
+    linear-gradient(-45deg, transparent 75%, #f06292 75%),
+    linear-gradient(-135deg, transparent 75%, #f06292 75%);
   line-height: 1.9;
   font-size: 30px;
   text-align: left;
@@ -183,13 +165,13 @@ input#click {
   position: absolute;
 }
 
-/* ticket outline */
+/* ticket border */
 #raffle-red div:after {
   width: 70px;
   padding-top: 120px;
   top: -23px;
   left: 52px;
-  border: 3px solid #ffb6c1; /* soft pink */
+  border: 3px solid #f48fb1;
   border-radius: 10px;
   transform: rotate(-90deg);
   font-family: monospace;
