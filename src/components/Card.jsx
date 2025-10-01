@@ -36,18 +36,14 @@ function Card() {
       <div id="card" className={`${cardClass}`} onClick={toggleCard}>     
         <div id="card-inside">
           <div className="wrap">
-            <p>Happy Birthday, John Doe!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque delectus dolore recusandae eveniet dicta. Corrupti.</p>
-            <p>
-              I hope you have a very blessed birthday!
-            </p>
-            <p>
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <p className="signed">Jane Doe</p>
+            <p>Happy Birthday, Mama!</p>
+            <p>Hi motherearth!! Today we celebrate not just your birthday, but the incredible mother you are. Thank you for loving us despite
+              having differences and through every hardship. You’ve always been our strength, our comfort, and the reason we keep going. No matter 
+              what life brings, your love never fails—and that’s the greatest gift we could ever have. .</p>
+            <p>I love you more than words can ever say. More than I say, 
+              kasi syempre im not vocal u know naman na kahit d ko sabihin, I still love you hahahahaah. Loveyou, Ma! Happy birthday uliitttt!!            </p>
+            
+            <p className="signed">Erickaaa</p>
           </div>
         </div>
 
@@ -60,7 +56,6 @@ function Card() {
 
       </motion.div>
 
-    {/* prone to bugs */}
       {isCardOpened && (
         <motion.div className="-mt-[3rem]" initial={{ opacity: 0, visibility: "hidden" }}
         animate={{ opacity: 1, visibility: "visible" }}

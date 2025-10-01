@@ -3,11 +3,11 @@ import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 
 function Home() {
-    const [visibleCount, setVisibleCount] = useState(1)
-    const navigate = useNavigate()
-    const sentences = [
-    "Hi John Doe",
-    "I have something to show you:)"
+  const [visibleCount, setVisibleCount] = useState(1)
+  const navigate = useNavigate()
+  const sentences = [
+    "Hi Ma!",
+    "I have something to show you :), click anywhere mwehehe"
   ]
 
   const handleClick = () => {
@@ -17,9 +17,10 @@ function Home() {
       navigate('/pictures')
     }
   }
+
   return (
-    <div 
-      className="flex flex-col min-h-screen  cursor-pointer w-full items-center justify-center over-flow-clip" 
+    <div
+      className="flex flex-col min-h-screen cursor-pointer w-full items-center justify-center overflow-clip"
       onClick={handleClick}
     >
       <div className="w-[90%] max-w-[400px] px-8">
@@ -29,7 +30,7 @@ function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.2 }}
-            className="text-4xl font-bold text-customBlue drop-shadow-lg"
+            className="text-4xl font-bold bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 bg-clip-text text-transparent drop-shadow-lg"
           >
             {sentence}
           </motion.p>
